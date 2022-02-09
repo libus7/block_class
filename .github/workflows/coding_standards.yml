@@ -12,17 +12,17 @@ jobs:
     name: Check for Drupal Coding Standards issues
     runs-on:  ubuntu-latest
     env:
-      MODULE: <project_name>
+      MODULE: block_class
       COMPOSER_MEMORY_LIMIT: -1
       # Note, the username, password, port and db match mysql service setup.
-      SIMPLETEST_DB: mysql://root:root@127.0.0.1:3306/<project_name>
+      SIMPLETEST_DB: mysql://root:root@127.0.0.1:3306/block_class
       SIMPLETEST_BASE_URL: http://localhost:8888
       PROJECT_ROOT: .
       DRUPAL_ROOT: ./docroot
       PHP_VERSION: '8.1'
     steps:
       - uses: actions/checkout@v2
-      - name: Set up php version ${{ env.PHP_VERSION }} 
+      - name: Set up php version ${{ env.PHP_VERSION }}
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ env.PHP_VERSION }}

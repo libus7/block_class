@@ -1,9 +1,9 @@
 {
-    "name": "drupal-10-compatibility/<project_name>",
+    "name": "drupal-10-compatibility/block-class",
     "description": "Drupal 10 Compatibility:  <Human Readable project name>",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://www.drupal.org/project/<project_name>",
+    "homepage": "https://www.drupal.org/project/block_class",
     "repositories": [
         {
             "type": "composer",
@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/block_class": "1.x-dev@dev",
         "drupal/core": "10.0.x-dev as 9.4",
         "drupal/core-composer-scaffold": "10.0.x-dev as 9.4",
         "drupal/core-recommended": "10.0.x-dev as 9.4",
